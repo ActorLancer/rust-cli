@@ -1,0 +1,16 @@
+[package]
+name = "echor"
+version = "0.1.0"
+edition = "2024"
+authors = [ "Lancer Luna <2756865549@qq.com>" ]
+
+[dependencies]
+clap = { version = "4.5.41", features = ["derive"] }
+
+[dev-dependencies]
+anyhow = "1.0.98"
+assert_cmd = "2.0.17"
+# predicates 提供了丰富的断言工具，比如字符串包含、正则匹配等
+predicates = "3.1.3"
+
+pretty_assertions = "1.4.1"

@@ -1,0 +1,13 @@
+[package]
+name = "hello"
+version = "0.1.0"
+edition = "2024"
+authors = [ "Luna Lancer <2756865549@qq.com>" ]
+
+
+[dependencies]
+# 在测试里运行自己的 Rust 二进制（CLI）或外部命令，并对它们的输出、退出码 stdin/stdout/stderr 等进行断言。
+assert_cmd = "2.0.17"
+# 将失败的断言打印成一个漂亮的、带颜色的 diff，特别有助于快速定位结构体或字符串中哪里不同。
+# 输出类似 Git diff，清楚标注新增 (+) 和删除 (-) 的行，非常直观。
+pretty_assertions = "1.4.1"
