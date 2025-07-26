@@ -99,7 +99,8 @@ fn run(args: Args) -> Result<()> {
 
     for path_name in &args.paths {
         let entries = WalkDir::new(path_name)
-            .into_iter()
+            .into_iter()     // 返回一个迭代器，产生 Result<DirEntry, Error> 类型的值
+            // 过滤和映射迭代器中的值，跳过 None,保留 Some
             .filter_map(|e| match e {
                 Err(err) => {
                     eprintln!("{err}");
